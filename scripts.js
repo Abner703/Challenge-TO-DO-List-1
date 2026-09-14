@@ -9,3 +9,10 @@ addTask.addEventListener("click",() =>{
     const  removeTask = document.createElement("button")
     removeTask.textContent = "Supprimer"
     task.append(removeTask)
+
+    
+    removeTask.addEventListener("click",(event) => {
+        event.target.parentElement.remove()
+    })
+
+})  
